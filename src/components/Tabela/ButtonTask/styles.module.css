@@ -1,0 +1,62 @@
+.buttonTasks {
+  background: var(--gray-500);
+  width: 736px;
+  height: 4.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  border: 1px solid var(--gray-400);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 1rem .625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.buttonTasks p {
+  text-transform: capitalize;
+}
+
+.buttonTasks svg {
+  cursor: pointer;
+}
+
+.buttonTasks svg:hover {
+  color: red;
+}
+
+.buttonTasks label input {
+  display: none;
+}
+
+.buttonTasks label span {
+  width: 12px;
+  height: 12px;
+  display: block;
+  background-color: #fff;
+  border: 2px solid var(--puple);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttonTasks label input:checked+span {
+  background-color: var(--blue);
+}
+
+.btnLineThrough {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.btnDelete {
+  background: transparent;
+  border: none;
+  color: var(--gray-300);
+}
+
+@media (max-width: 768px) {
+  .buttonTasks {
+    width: 95%;
+  }
+}
